@@ -301,7 +301,8 @@ main {
 
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="2" name="characterprofession" tags="" position="600,450" size="100,100">&lt;br&gt;
 &lt;body&gt;&lt;div class=&quot;container&quot;&gt;\
-&lt;header&gt;many kinds of people travel to this dungeon without making it back. you may:&lt;/header&gt;\
+&lt;header&gt;&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;many kinds of people travel to this dungeon without making it back. you may:&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
+&lt;/header&gt;\
             &lt;main&gt;\
             &lt;div class=&quot;char-item&quot;&gt;\
             [[be an anxious noble|name-noble][$job = &quot;Noble&quot;]]&lt;img src=&quot;images/noble.png&quot; alt=&quot;a photo shows a nobleman reading a book and holding a staff&quot;/&gt;&lt;/div&gt;\
@@ -314,7 +315,10 @@ main {
             &lt;/main&gt;\
             &lt;div style=&quot;margin:auto;&quot; class=&quot;nav&quot;&gt;[[find out the difference|job-dif]]&lt;/div&gt; 
         &lt;/div&gt;\
-&lt;/body&gt;\</tw-passagedata><tw-passagedata pid="3" name="Shopping" tags="" position="600,750" size="100,100">&lt;p&gt;
+&lt;/body&gt;\</tw-passagedata><tw-passagedata pid="3" name="Shopping" tags="" position="600,750" size="100,100">
+&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;the shoppes&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
+
+&lt;p&gt;
 for your journey, you’ll need to get some supplies before you can leave town.
 
 as a $job, you currently have $money silver, but you don’t have to spend it all now. you can buy whatever you need and talk to locals in the local shoppes. where do you want to go?
@@ -328,7 +332,7 @@ as a $job, you currently have $money silver, but you don’t have to spend it al
 
 &lt;/p&gt;</tw-passagedata><tw-passagedata pid="4" name="name-noble" tags="" position="400,600" size="100,100">&lt;br&gt;
 &lt;body&gt;&lt;div class=&quot;container&quot;&gt;\
-&lt;header&gt;&lt;strong&gt;the noble&lt;/strong&gt;&lt;/header&gt;\
+&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;the noble&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
             &lt;main&gt;\
             &lt;div class=&quot;char-img&quot;&gt;\
             &lt;img src=&quot;images/noble.png&quot; alt=&quot;a photo shows a nobleman reading a book and holding a staff&quot;/&gt;&lt;/div&gt;\
@@ -351,7 +355,7 @@ through servant’s whispers, the king hears swirling rumors of a powerful, anci
 &lt;&lt;set $weapon to &quot;N/A&quot;&gt;&gt;&lt;&lt;/nobr&gt;&gt;&lt;&lt;/silently&gt;&gt;
 </tw-passagedata><tw-passagedata pid="5" name="name-knight" tags="" position="525,600" size="100,100">&lt;br&gt;
 &lt;body&gt;&lt;div class=&quot;container&quot;&gt;\
-&lt;header&gt;&lt;strong&gt;the knight&lt;/strong&gt;&lt;/header&gt;\
+&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;the knight&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
             &lt;main&gt;\
             &lt;div class=&quot;char-img&quot;&gt;\
             &lt;img src=&quot;images/knight.png&quot; alt=&quot;a photo shows a knight swinging her sword in the air&quot;/&gt; 
@@ -375,7 +379,7 @@ aimless and tired of living under the tyranny of king edric’s traitors, alwyn 
 &lt;&lt;set $food to 0&gt;&gt;
 &lt;&lt;set $weapon to &quot;flail&quot;&gt;&gt;&lt;&lt;/nobr&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="name-farmer" tags="" position="675,600" size="100,100">&lt;br&gt;
 &lt;body&gt;&lt;div class=&quot;container&quot;&gt;\
-&lt;header&gt;&lt;strong&gt;the farmer&lt;/strong&gt;&lt;/header&gt;\
+&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;the farmer&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
             &lt;main&gt;\
             &lt;div class=&quot;char-img&quot;&gt;\
             &lt;img src=&quot;images/farmer.png&quot; alt=&quot;a photo shows a man with a stick sitting down&quot;/&gt;
@@ -399,7 +403,7 @@ with nothing but bread and his sickle, oswin left his eldest son in charge and s
 &lt;&lt;set $weapon to &quot;N/A&quot;&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="name-nun" tags="" position="800,600" size="100,100">&lt;br&gt;
 &lt;body&gt;&lt;div class=&quot;container&quot;&gt;\
-&lt;header&gt;&lt;strong&gt;the nun&lt;/strong&gt;&lt;/header&gt;\
+&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;the nun&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
             &lt;main&gt;\
             &lt;div class=&quot;char-img&quot;&gt;\
 &lt;img src=&quot;images/nun.png&quot; alt=&quot;a photo shows a medieval nun&quot;/&gt;&lt;/div&gt;\
@@ -419,7 +423,7 @@ desperate to prove her faith and stop these forces, sister vivienne runs straigh
 &lt;&lt;set $health to 100&gt;&gt;
 &lt;&lt;set $sanity to 100&gt;&gt;
 &lt;&lt;set $food to 0&gt;&gt;
-&lt;&lt;set $weapon to &quot;N/A&quot;&gt;&gt;&lt;&lt;/nobr&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="blacksmith1" tags="" position="600,875" size="100,100">&lt;img style=&quot;width:40%;&quot; src=&quot;images/blacksmith.png&quot; alt=&quot;a photo reads &#39;Blacksmith&#39; in a red blackletter font&quot;/&gt;
+&lt;&lt;set $weapon to &quot;N/A&quot;&gt;&gt;&lt;&lt;/nobr&gt;&gt;&lt;&lt;/silently&gt;&gt;</tw-passagedata><tw-passagedata pid="8" name="blacksmith1" tags="" position="600,875" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;the blacksmith&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
 
 here you can buy weapons to help protect yourself in the dungeons. you can only have one weapon type at a time, so if you buy/loot a new weapon, the inferior weapon will be left behind.
 
@@ -470,7 +474,7 @@ you have $money silver left | you currently have: $food food, $lockpick lockpick
 
 you can go [[back to the shoppes|Shopping]] or if you&#39;re done shopping, you can [[start your journey|leave]]
 
-</tw-passagedata><tw-passagedata pid="9" name="generalstore1" tags="" position="725,875" size="100,100">&lt;img style=&quot;width:40%;&quot; src=&quot;images/generalstore.png&quot; alt=&quot;a photo reads &#39;General Store&#39; in a red blackletter font&quot;/&gt;
+</tw-passagedata><tw-passagedata pid="9" name="generalstore1" tags="" position="725,875" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;the general store&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
 
 welcome to the general store! here you can buy dry goods for your journey. i always recommend leaving with at least 30 torches and 30 food, but you can sometimes find more in the dungeons. lockpicks aren&#39;t essential, but will certainly help you on your way... and you can use cloth to heal if you&#39;re injured.
 
@@ -503,7 +507,7 @@ which item would you like to buy?
 
 you have $money silver left | You currently have: $food food, $lockpick lockpicks, $torch torches, $cloth cloth, $ale ales and a $weaponname.
 
-go [[back to the shoppes|Shopping]] or if you&#39;re done shopping, you can [[start your journey|leave]]</tw-passagedata><tw-passagedata pid="10" name="tavern1" tags="" position="475,875" size="100,100">&lt;img style=&quot;width:40%;&quot; src=&quot;images/tavern.png&quot; alt=&quot;a photo reads &#39;tavern&#39; in a red blackletter font&quot;/&gt;
+go [[back to the shoppes|Shopping]] or if you&#39;re done shopping, you can [[start your journey|leave]]</tw-passagedata><tw-passagedata pid="10" name="tavern1" tags="" position="475,875" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;the tavern&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
 
 hello! thinking of taking some ale on your journey? it&#39;ll keep you from losing your mind down in those dungeons...
 
@@ -517,7 +521,10 @@ which item would you like to buy?
 
 you have $money silver left | you currently have: $food food, $lockpick lockpicks, $torch torches, $cloth cloth, $ale ales and a $weaponname.
 
-you can go [[back to the shoppes|Shopping]] or if you&#39;re done shopping, you can [[start your journey|leave]]</tw-passagedata><tw-passagedata pid="11" name="leave" tags="" position="600,1000" size="100,100">&lt;img style=&quot;width:100%;&quot; src=&quot;images/landscape1.png&quot; alt=&quot;a photo shows a small castle or keep&quot;/&gt;
+you can go [[back to the shoppes|Shopping]] or if you&#39;re done shopping, you can [[start your journey|leave]]</tw-passagedata><tw-passagedata pid="11" name="leave" tags="" position="600,1000" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;the outskirts&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
+
+
+&lt;img style=&quot;width:100%;&quot; src=&quot;images/landscape1.png&quot; alt=&quot;a photo shows a small castle or keep&quot;/&gt;
 &lt;p style=&quot;text-align:center;&quot;&gt;you leave town and head for the dungeons...
 
 [[enter dungeon|loop]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="12" name="StoryInit" tags="" position="600,200" size="100,100">&lt;&lt;set $day to 0&gt;&gt;
@@ -582,7 +589,9 @@ you can go [[back to the shoppes|Shopping]] or if you&#39;re done shopping, you 
             &lt;/main&gt;\
         &lt;/div&gt;\
 &lt;/body&gt;\
-&lt;&lt;include &quot;End Conditions&quot;&gt;&gt;\</tw-passagedata><tw-passagedata pid="14" name="2. check supplies" tags="" position="475,1125" size="100,100">You currently have: 
+&lt;&lt;include &quot;End Conditions&quot;&gt;&gt;\</tw-passagedata><tw-passagedata pid="14" name="2. check supplies" tags="" position="475,1125" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;supplies&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
+
+you currently have: 
 
 silver - $money
 food - $food
@@ -592,7 +601,7 @@ lockpicks - $lockpick
 cloth - $cloth
 and your weapon is a $weaponname
 
-[[CONTINUE|loop]]</tw-passagedata><tw-passagedata pid="15" name="new layout" tags="" position="100,1100" size="100,100">&lt;body&gt;&lt;div class=&quot;container&quot;&gt;\
+&lt;div class=&quot;nav&quot;&gt;[[continue|loop]]&lt;/div&gt;\</tw-passagedata><tw-passagedata pid="15" name="new layout" tags="" position="100,1100" size="100,100">&lt;body&gt;&lt;div class=&quot;container&quot;&gt;\
 &lt;header&gt;you find some rotting fruit in the bottom of a barrel. you collect 3 food.&lt;/header&gt;\
             &lt;main&gt;&lt;div class=&quot;left&quot;&gt;\
             &lt;div class=&quot;stats&quot;&gt;\
@@ -1044,7 +1053,7 @@ The stranger draws his dagger, but you easily defeat him.
 
 [[continue on your path.|loop]]</tw-passagedata><tw-passagedata pid="31" name="trade 2" tags="" position="1225,1125" size="100,100">The bandaged stranger offers you 10 food in return for 3 cloth.
 
-[[Agree to the trade|trade2.1]] or [[continue on your path.|loop]]</tw-passagedata><tw-passagedata pid="32" name="Battle ending" tags="" position="275,1550" size="100,100">ENDING 1
+[[Agree to the trade|trade2.1]] or [[continue on your path.|loop]]</tw-passagedata><tw-passagedata pid="32" name="Battle ending" tags="" position="275,1550" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;ending 1&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
 
 You died in battle and will now never know what secrets the dungeon has to hide...
 
@@ -1083,19 +1092,19 @@ You lose 10 food but are able to [continue on your path.|loop]] </tw-passagedata
 3. &lt;&lt;textbox &quot;$party_3&quot; &quot; &quot; &quot;Shopping&quot;&gt;&gt;
 4. &lt;&lt;textbox &quot;$party_4&quot; &quot; &quot; &quot;Shopping&quot;&gt;&gt;
 &lt;/p&gt;
-</tw-passagedata><tw-passagedata pid="38" name="Wound Ending" tags="" position="375,1550" size="100,100">ENDING 2
+</tw-passagedata><tw-passagedata pid="38" name="Wound Ending" tags="" position="375,1550" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;ending 2&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
 
 You succumb to your wounds and will now never know what secrets the dungeon has to hide...
 
 Your soul forever joins countless others as a victim of the dungeon...
 
-[[try again|reset]]</tw-passagedata><tw-passagedata pid="39" name="No Sanity Ending" tags="" position="475,1550" size="100,100">ENDING 3
+[[try again|reset]]</tw-passagedata><tw-passagedata pid="39" name="No Sanity Ending" tags="" position="475,1550" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;ending 3&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
 
 You are driven insane inside the winding passages of the dungeon.
 
 You will never know what secrets the dungeon has to hide and your soul forever joins countless others as a victim of the dungeon...
 
-[[try again|reset]]</tw-passagedata><tw-passagedata pid="40" name="Farmer Ending" tags="" position="325,1650" size="100,100">ENDING 5 - FARMER
+[[try again|reset]]</tw-passagedata><tw-passagedata pid="40" name="Farmer Ending" tags="" position="325,1650" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;ending 5&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
 
 When Oswin reaches the final chamber, he finds the fabled witch, an ancient and powerful being whose magic has been draining life force from the surrounding lands. In exchange for his soul, she offers to restore his village and banish the blight from the land.
 
@@ -1103,13 +1112,13 @@ Instead of offering his soul, Oswin puts his faith in old folktales to try trick
 
 Oswin returns home a hero, able to end her curse over the land without giving her what she desires. His village is restored and his crops flourish, but Oswin forever feels the land’s power calling to him, like there is still some greater force he must answer to.
 
-[[try again|reset]]</tw-passagedata><tw-passagedata pid="41" name="Knight Ending" tags="" position="225,1650" size="100,100">ENDING 4 - KNIGHT
+[[try again|reset]]</tw-passagedata><tw-passagedata pid="41" name="Knight Ending" tags="" position="225,1650" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;ending 4&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
 
 Alwyn reaches the end of the dungeon and faces the final guardian, a corrupted and agressive version of the Lord Edric she once knew. Despite attempting to reason with him, Lord Edric is beyond saving. The dungeon has twisted him into a mindless, vengeful husk of his former self, cursed and warped by ancient magic. In an intense battle, Alwyn is torn by her loyalty to her former ruler and her commitment to protecting her kingdom and doing what’s right. 
 
 She finally defeats the ghoulish noble, and leaves defeated yet assured she’s done the right thing. Alwyn knows that her fight has allowed the truth to be revealed, and  leaves with the confidence to protect her land from all evil that threatens it. Her return home is bittersweet. While her kingdom mourns the death of their true king, they view Alwyn as a symbol of hope and resilience. She becomes a leader in her own right, dedicated to protecting her people from those who seek to control them.
 
-[[try again|reset]]</tw-passagedata><tw-passagedata pid="42" name="Nun Ending" tags="" position="425,1650" size="100,100">ENDING 6 - NUN
+[[try again|reset]]</tw-passagedata><tw-passagedata pid="42" name="Nun Ending" tags="" position="425,1650" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;ending 6&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
 
 As Sister Vivienne reaches the dungeon’s deepest chamber, she encounters an ancient evil: a powerful demon that had been sealed away by the Order of the Waxing Moon centuries ago. The demon has been feeding off the corrupted souls of priests, using their power to influence the very church she had once belonged to.
 
@@ -1117,7 +1126,8 @@ Her visions prove true, and she’s been given the chance to stop the destructio
 
 Though victorious, Vivienne is deeply changed by the horrors she encountered. She returns to the world, no longer just a nun, but a warrior of the divine. However, she knows she may never return to the church she once called home. While she succeeded in stopping the ancient evil, she is forever marked by the darkness she fought and all she did to  get there.
 
-[[try again|reset]]</tw-passagedata><tw-passagedata pid="43" name="Noble Ending" tags="" position="525,1650" size="100,100">&lt;p style=&quot;text-align:center;&quot;&gt;ENDING 7 - NOBLE&lt;/p&gt;
+[[try again|reset]]</tw-passagedata><tw-passagedata pid="43" name="Noble Ending" tags="" position="525,1650" size="100,100">&lt;header&gt;&lt;strong&gt;&lt;&lt;return &quot;ending 7&quot;&gt;&gt;&lt;/strong&gt;&lt;/header&gt;\
+
 After King Thomas navigates the last corridors of the dungeon, he finally reaches the artifact—a crystal infused with the magic of a long-dead god—he is faced with a decision: use the artifact’s power for his kingdom’s glory or leave it undisturbed.
 
 The artifact grants unfathomable power, but it comes with a curse—those who wield it are bound by its will, slowly losing their humanity to the lust for control. Despite his wisdom, King Thomas succumbs to the artifact&#39;s temptation, believing it will ensure his kingdom&#39;s survival. 
@@ -1145,7 +1155,9 @@ You may:
 [[Fight|fight 2]]
 [[Talk|talk 2]]
 [[Run|loop]]
-or [[Trade.|trade 2]]</tw-passagedata><tw-passagedata pid="52" name="job-dif" tags="" position="725,450" size="100,100">as the noble, you get the advantage of starting with more money.
+or [[Trade.|trade 2]]</tw-passagedata><tw-passagedata pid="52" name="job-dif" tags="" position="725,450" size="100,100">
+
+as the noble, you get the advantage of starting with more money.
 
 as the knight, you get the advantage of starting with a flail (a level 3 weapon).
 
